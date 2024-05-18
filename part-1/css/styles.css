@@ -2,22 +2,51 @@ body {
   margin: 10px;
 }
 
-/* Any 'p' element inside #products */
-#products p {
-  color: orange;
+/* The first sub/child element inside an article element */
+article :first-child {
+  font-size: 125%;
+  font-style: italic;
+  color: blueviolet;
 }
 
-/* Any direct 'p' descendant element inside #products */
-#products > p {
-  color: blue;
-}
-
-/* All 'p' elements after #products  */
-#products ~ p {
+/* The first occurance of any element inside an article element */
+article :first-of-type {
+  font-size: 130%;
+  font-style: italic;
   color: red;
 }
 
-/* Any direct sibling (following) 'p' element of #products */
-#products + p {
-  color: purple;
+/* The first occurance of 'p' element inside an article element */
+article p:first-of-type {
+  font-size: 135%;
+  font-style: italic;
+  color: darkgreen;
+}
+
+/* The last occurance of 'p' element inside an article element */
+article p:last-of-type {
+  font-size: 140%;
+  font-style: italic;
+  color: crimson;
+}
+
+/* The last sub/child element inside an article element */
+article :last-child {
+  font-size: 145%;
+  font-weight: bold;
+  color: dodgerblue;
+}
+
+/* Every odd 'li' inside a 'ul' element */
+ul li:nth-child(odd) {
+  color: deeppink;
+}
+
+/* All visited 'a' elements (Hyperlinks) */
+a:visited, a:link {
+  color: indianred;
+}
+
+a:hover, a:focus {
+  font-size: 150%;
 }
