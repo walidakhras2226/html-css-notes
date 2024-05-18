@@ -2,6 +2,22 @@ body {
   margin: 10px;
 }
 
-p {
-    color: orange;
-  }
+/* Exact match */
+a[href="https://google.com"] {
+  color: orange;
+}
+
+/* Contains 'google' */
+a[href*="google"] {
+  font-weight: bold;
+}
+
+/* Starts with 'https' */
+a[href^="https"] {
+  background-color: dodgerblue;
+}
+
+/* Ends with '.com/' */
+a[href$=".com/"] {
+  font-size: 20px;
+}
