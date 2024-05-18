@@ -2,20 +2,11 @@ body {
   margin: 10px;
 }
 
-/* Difference between 'rgb' and 'rgba' is that rgba's 4th argument is the opacity */
 .box {
-  height: 200px;
   width: 200px;
-  background-color: rgb(255, 81, 69);
-  background-color: rgba(255, 81, 69, 0.69);
+  height: 200px;
+  background: linear-gradient(45deg, dodgerblue,crimson 80%);
+  background: radial-gradient(circle at top right, #424549, #282b30);
 }
 
-/* Difference between 'rgb' and 'rgba' is that rgba's 4th argument is the opacity */
-/* Other color systems include: hsl or hsla, hexcode (Recommended), and rgb */
-.box {
-  height: 200px;
-  width: 200px;
-  background-color: rgb(255, 81, 69);
-  background-color: rgba(255, 81, 69, 0.69);
-  background-color: hsl(53deg 93% 51%);
-}
+/* cssgradient.io is a good tool to build gradients */
