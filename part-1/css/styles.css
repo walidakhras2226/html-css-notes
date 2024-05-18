@@ -2,22 +2,14 @@ body {
   margin: 10px;
 }
 
-/* Use of '!important' discards other rules (Unrecommended) */
-h1 {
-  color: dodgerblue !important;
+p {
+  color: dodgerblue;
+  border: 1px solid black;
 }
 
-.highlight {
-  color: deeppink;
+/* Using 'initial' prevents inheritance and uses the default value */
+/* Using 'inherits' allows inheritance from parent element */
+strong {
+  color: initial;
+  border: inherit;
 }
-
-#products {
-  color: green;
-}
-
-/* The element with class 'feature' containing an element with id 'products' (Don't make it deeply nested) */
-.feature #products {
-  color: crimson;
-}
-
-/* Selectors specificity is as follows: id > class > elements */
