@@ -2,14 +2,20 @@ body {
   margin: 10px;
 }
 
-p {
-  color: dodgerblue;
-  border: 1px solid black;
+/* Difference between 'rgb' and 'rgba' is that rgba's 4th argument is the opacity */
+.box {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(255, 81, 69);
+  background-color: rgba(255, 81, 69, 0.69);
 }
 
-/* Using 'initial' prevents inheritance and uses the default value */
-/* Using 'inherits' allows inheritance from parent element */
-strong {
-  color: initial;
-  border: inherit;
+/* Difference between 'rgb' and 'rgba' is that rgba's 4th argument is the opacity */
+/* Other color systems include: hsl or hsla, hexcode (Recommended), and rgb */
+.box {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(255, 81, 69);
+  background-color: rgba(255, 81, 69, 0.69);
+  background-color: hsl(53deg 93% 51%);
 }
