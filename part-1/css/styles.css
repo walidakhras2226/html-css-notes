@@ -5,8 +5,10 @@ body {
 .box {
   width: 200px;
   height: 200px;
-  background: linear-gradient(45deg, dodgerblue,crimson 80%);
-  background: radial-gradient(circle at top right, #424549, #282b30);
+  background: dodgerblue;
+  border: 10px dashed royalblue;
+  border-width: 10px 10px 10px 10px; /* Top, Right, Bottom, Left */
+  border-style: dashed dashed dashed dashed; /* Top, Right, Bottom, Left */
+  border-color: lightskyblue lightblue lightskyblue lightblue; /* Top, Right, Bottom, Left */
+  border-radius: 50%;
 }
-
-/* cssgradient.io is a good tool to build gradients */
