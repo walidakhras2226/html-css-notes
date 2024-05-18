@@ -2,22 +2,22 @@ body {
   margin: 10px;
 }
 
-/* Exact match */
-a[href="https://google.com"] {
+/* Any 'p' element inside #products */
+#products p {
   color: orange;
 }
 
-/* Contains 'google' */
-a[href*="google"] {
-  font-weight: bold;
+/* Any direct 'p' descendant element inside #products */
+#products > p {
+  color: blue;
 }
 
-/* Starts with 'https' */
-a[href^="https"] {
-  background-color: dodgerblue;
+/* All 'p' elements after #products  */
+#products ~ p {
+  color: red;
 }
 
-/* Ends with '.com/' */
-a[href$=".com/"] {
-  font-size: 20px;
+/* Any direct sibling (following) 'p' element of #products */
+#products + p {
+  color: purple;
 }
