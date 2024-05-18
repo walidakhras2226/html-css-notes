@@ -2,30 +2,22 @@ body {
   margin: 10px;
 }
 
-/* First letter of a 'p' element */
-p::first-letter {
-  font-size: 169%;
-  font-weight: bold;
+/* Use of '!important' discards other rules (Unrecommended) */
+h1 {
+  color: dodgerblue !important;
 }
 
-/* First line of a 'p' element */
-p::first-line {
-  font-weight: bold;
+.highlight {
+  color: deeppink;
 }
 
-/* Any selected element */
-::selection {
-  background-color: crimson;
+#products {
+  color: green;
 }
 
-/* Before the content of a 'p' element */
-p::before {
-  content: "Paragraph: ";
-  display: block;
+/* The element with class 'feature' containing an element with id 'products' (Don't make it deeply nested) */
+.feature #products {
+  color: crimson;
 }
 
-/* After the content of a 'p' element */
-p::after {
-  content: "...";
-  display: block;
-}
+/* Selectors specificity is as follows: id > class > elements */
