@@ -2,51 +2,30 @@ body {
   margin: 10px;
 }
 
-/* The first sub/child element inside an article element */
-article :first-child {
-  font-size: 125%;
-  font-style: italic;
-  color: blueviolet;
-}
-
-/* The first occurance of any element inside an article element */
-article :first-of-type {
-  font-size: 130%;
-  font-style: italic;
-  color: red;
-}
-
-/* The first occurance of 'p' element inside an article element */
-article p:first-of-type {
-  font-size: 135%;
-  font-style: italic;
-  color: darkgreen;
-}
-
-/* The last occurance of 'p' element inside an article element */
-article p:last-of-type {
-  font-size: 140%;
-  font-style: italic;
-  color: crimson;
-}
-
-/* The last sub/child element inside an article element */
-article :last-child {
-  font-size: 145%;
+/* First letter of a 'p' element */
+p::first-letter {
+  font-size: 169%;
   font-weight: bold;
-  color: dodgerblue;
 }
 
-/* Every odd 'li' inside a 'ul' element */
-ul li:nth-child(odd) {
-  color: deeppink;
+/* First line of a 'p' element */
+p::first-line {
+  font-weight: bold;
 }
 
-/* All visited 'a' elements (Hyperlinks) */
-a:visited, a:link {
-  color: indianred;
+/* Any selected element */
+::selection {
+  background-color: crimson;
 }
 
-a:hover, a:focus {
-  font-size: 150%;
+/* Before the content of a 'p' element */
+p::before {
+  content: "Paragraph: ";
+  display: block;
+}
+
+/* After the content of a 'p' element */
+p::after {
+  content: "...";
+  display: block;
 }
