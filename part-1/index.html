@@ -4,33 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      table,
+      td,
+      th {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+      }
+
+      tfoot {
+        text-align: left;
+      }
+    </style>
   </head>
   <body>
-    <ul>
-      <li>About Me</li>
-      <li>Courses</li>
-      <ul>
-        <li>HTML</li>
-        <li>JavaScript</li>
-        <li>Git</li>
-      </ul>
-      <li>Subscribe</li>
-      <li>Contact Me</li>
-    </ul>
-    <br />
-    <ol>
-      <li>Preheat the oven.</li>
-      <li>Place the ingredients on the crust.</li>
-      <li>put the pizza in the oven for 20 minutes</li>
-    </ol>
-    <dl>
-      <dt>Titlte</dt>
-      <dd>The Ultimate HTML and CSS Course</dd>
-      <dt>Skills</dt>
-      <dd>HTML</dd>
-      <dd>CSS</dd>
-      <dd>Responsive Design</dd>
-      <dd>Search Engine Optimization</dd>
-    </dl>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">Expenses</th>
+        </tr>
+        <tr>
+          <th>Category</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Marketing</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>Accounting</td>
+          <td>$200</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Total</th>
+          <th>$300</th>
+        </tr>
+      </tfoot>
+    </table>
   </body>
 </html>
