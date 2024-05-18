@@ -3,12 +3,14 @@ body {
 }
 
 .box {
+  text-align: center;
   width: 200px;
   height: 200px;
   background: dodgerblue;
-  border: 10px dashed royalblue;
-  border-width: 10px 10px 10px 10px; /* Top, Right, Bottom, Left */
-  border-style: dashed dashed dashed dashed; /* Top, Right, Bottom, Left */
-  border-color: lightskyblue lightblue lightskyblue lightblue; /* Top, Right, Bottom, Left */
-  border-radius: 50%;
+  box-shadow: 0 0 20px grey;
+}
+
+h1 {
+  color: white;
+  text-shadow: 3px 3px 5px rgba(0,0,0,0.2);
 }
