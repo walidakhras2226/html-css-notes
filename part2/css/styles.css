@@ -1,7 +1,23 @@
-p {
-    margin: 20px;
-    padding: 0;
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
-/* Margin to seperate elements */
-/* Padding to create space between content and border */
+body {
+    margin: 10px;
+}
+
+.box::before {
+    content: "Hello";
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    display: inline-block;
+}
+
+/* box-sizing: border-box applies the  width and height to the border box */
+/* box-sizing: content-box (default) applies width and height to the content box */
+/* Width and Height only apply to block-level elements, not inline */
+/* To give inline elements a width and height, using 'display: inlike-block;' */
