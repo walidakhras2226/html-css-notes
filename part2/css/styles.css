@@ -1,36 +1,27 @@
 body {
     margin: 10px;
-    height: 200vh;
 }
 
-.boxes {
+.tweet {
     border: 3px solid lightgrey;
-    position: relative;
+    overflow: hidden;
+    /* 'overflow: hidden;' is highly unrecommended to solve parent collapsing */
 }
 
-.box {
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.avatar {
     width: 5rem;
     height: 5rem;
-}
-
-.box-one {
     background-color: gold;
+    float: left;
+    margin-right: 0.5rem;
 }
 
-.box-two {
-    background-color: tomato;
-    position: fixed;
-    top: 0;
-    left: 2rem;
-    right: 2rem;
-    width: auto;
-    z-index: 1;
+.clear {
+    clear: both;
 }
-
-.box-three {
-    background-color: dodgerblue;
-}
-
-/* 'relative' positions an element relative to its normal position */
-/* 'absolute' positions an element relative io its parent (parent must have relative positioning) */
-/* 'fixed' positions an element relative to the viewport */
