@@ -1,12 +1,20 @@
-.box {
-    border: solid 3px gold;
-    width: 150px;
-    height: 150px;
-    overflow: hidden auto;
+html {
+    font-size: 62.5%;
 }
 
-/* Overflow determines whether extra content is shown */
-/* 'hidden' hides any overflowing content */
-/* 'scroll' displays scrollbars */
-/* 'auto' displays scrollbars in case of overflown content */
-/* The first value is for horizontal scroll, the second is for vertical scroll */
+body {
+    margin: 10px;
+}
+
+.box {
+    width: 10rem;
+    height: 100vh;
+    background-color: gold;
+    border-top: 3px solid orange;
+}
+
+/* 'px' is an absolute unit */
+/* 'em' is a unit referring the font size of the parent element */
+/* 'rem' is a unit referring the font size of the root element (16px) */
+/* 'vh' and 'vw' refer to the viewport height and width */
+/* '%' refers to the dimension of the parent element */
