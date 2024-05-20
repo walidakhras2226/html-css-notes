@@ -1,0 +1,37 @@
+body {
+    margin: 10px;
+}
+
+.container {
+    border: 3px solid lightgrey;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    /* flex: grow shrink basis */
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+    /* flex-basis: 15rem; */
+    flex: 1 1 15rem;
+    width: 5rem;
+    height: 5rem;
+    background-color: gold;
+    margin: 1rem;
+}
+
+.box-one {
+    /* align-self: flex-start; */
+    /* flex-grow: 2; */
+    flex-shrink: 0;
+}
+
+/* flex allows the user to allign items */
+/* flex-direction: row -> main (primary) axis = horizontal, cross (secondary) = vertical (flex-direction: column is vice versa)*/
+/* justify-content -> align items across the main axis */
+/* align-items -> align items across the secondary axis */
+/* flex-wrap -> defines how items behave when not enough space is allocated */
+/* align-content -> defines how wrapped content behave */
