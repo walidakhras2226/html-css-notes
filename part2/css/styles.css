@@ -1,20 +1,36 @@
-html {
-    font-size: 62.5%;
-}
-
 body {
     margin: 10px;
+    height: 200vh;
+}
+
+.boxes {
+    border: 3px solid lightgrey;
+    position: relative;
 }
 
 .box {
-    width: 10rem;
-    height: 100vh;
-    background-color: gold;
-    border-top: 3px solid orange;
+    width: 5rem;
+    height: 5rem;
 }
 
-/* 'px' is an absolute unit */
-/* 'em' is a unit referring the font size of the parent element */
-/* 'rem' is a unit referring the font size of the root element (16px) */
-/* 'vh' and 'vw' refer to the viewport height and width */
-/* '%' refers to the dimension of the parent element */
+.box-one {
+    background-color: gold;
+}
+
+.box-two {
+    background-color: tomato;
+    position: fixed;
+    top: 0;
+    left: 2rem;
+    right: 2rem;
+    width: auto;
+    z-index: 1;
+}
+
+.box-three {
+    background-color: dodgerblue;
+}
+
+/* 'relative' positions an element relative to its normal position */
+/* 'absolute' positions an element relative io its parent (parent must have relative positioning) */
+/* 'fixed' positions an element relative to the viewport */
