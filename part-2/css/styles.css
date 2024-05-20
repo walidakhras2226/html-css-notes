@@ -2,48 +2,7 @@ body {
     margin: 10px;
 }
 
-.container {
-    height: 100vh;
-    display: grid;
-    border: 5px solid lightgrey;
-    
-    /* grid-template-rows: 100px 100px 100px; */
-    /* grid-template-columns: 100px 100px; */
-    /* grid-template-rows: repeat(3, 100px); */
-    /* grid-template-columns: repeat(2, 100px); */
-    /* grid-template: 100px auto 100px / 30fr 70fr; A shorthand for the code above */
-
-    /* row-gap: 10px; */
-    /* column-gap: 5px; */
-    /* gap: 10px 5px; */
-
-    /* justify-items: stretch; aligns items in a grid horizontally */
-    /* align-items: stretch; aligns items in a grid vertically */
-    
-    /* justify-content: center; aligns the grid horizontally */
-    /* align-content: center; aligns the grid vertically */
-
-    grid-template-areas: "header  header"
-                         "sidebar main"
-                         ".       footer";
-}
-
-.box {
-    background-color: gold;
-}
-
-.box-one {
-    grid-column: 1 / 3;
-    /* grid-column: 1 / -1; */
-    /* grid-column: 1 / span 2; */
-
-    /* grid-row: 2; */
-    /* grid-row: 2 / 4; */
-    /* grid-row: 2 / span 2; */
-
-    grid-area: header;
-}
-
-.box-four {
-    grid-area: footer;
+.first {
+    display: none; /* The element disappears */
+    visibility: hidden; /* The element is invisible, but the space is still allocated */
 }
