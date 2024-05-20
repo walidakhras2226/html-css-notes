@@ -1,23 +1,12 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 10px;
-}
-
-.box::before {
-    content: "Hello";
-}
-
 .box {
-    width: 100px;
-    height: 100px;
-    background-color: gold;
-    display: inline-block;
+    border: solid 3px gold;
+    width: 150px;
+    height: 150px;
+    overflow: hidden auto;
 }
 
-/* box-sizing: border-box applies the  width and height to the border box */
-/* box-sizing: content-box (default) applies width and height to the content box */
-/* Width and Height only apply to block-level elements, not inline */
-/* To give inline elements a width and height, using 'display: inlike-block;' */
+/* Overflow determines whether extra content is shown */
+/* 'hidden' hides any overflowing content */
+/* 'scroll' displays scrollbars */
+/* 'auto' displays scrollbars in case of overflown content */
+/* The first value is for horizontal scroll, the second is for vertical scroll */
