@@ -1,3 +1,9 @@
-.meal {
-    width: 100vw;
+body {
+    background: url(../images/bg-sanfrancisco.jpg);
+    background-repeat: no-repeat;
+    /* background-position: 100px 100px; Horizontal | Vertical */
+    /* background-size: 100% 100%; Width | Height */
+    background-size: cover; /* Makes the background cover the entire viewing screen */
+    background-attachment: fixed; /* Makes the background stay fixed relative to the viewport */
+    height: 300vh;
 }
