@@ -13,10 +13,13 @@
   </head>
   <body>
     <form>
-      <input type="number" />
-      <textarea>Comment...</textarea>
+      <input type="text" list="countries" autocomplete="off" />
+      <datalist id="countries">
+        <option>Australia</option>
+        <option>Canada</option>
+        <option>India</option>
+        <option>United States</option>
+      </datalist>
     </form>
   </body>
 </html>
-
-<!-- Basic text fields have types that include: text, number, email, password etc. -->
