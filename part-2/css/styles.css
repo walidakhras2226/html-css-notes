@@ -9,9 +9,13 @@ body {
     width: 100px;
     height: 100px;
     background-color: gold;
-    transition: transform 0.2s;
+    transition: transform 0.5s;
 }
 
-.box:hover {
-    transform: rotate(-15deg) skew(10deg) translate(25px, 20px);
+.container {
+    perspective: 200px;
+}
+
+.container:hover .box {
+    transform: translateZ(50px) rotateY(20deg) rotateX(20deg);
 }
