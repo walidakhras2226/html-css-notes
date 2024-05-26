@@ -1,41 +1,8 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+/* Kebab case */
+.nav-bar {}
 
-@keyframes pop {
-    0% {
-        transform: scale(1);
-    }
+/* Camel case */
+.navBar {}
 
-    25% {
-        transform: scale(1.25);
-    }
-
-    50% {
-        transform: rotate(45deg);
-        background-color: tomato;
-    }
-
-    100% {
-        transform: rotate(0);
-    }
-}
-
-.box {
-    width: 100px;
-    height: 100px;
-    background-color: gold;
-}
-
-.animation-pop {
-    /* animation-name: pop; */
-    /* animation-duration: 4s; */
-    /* animation-timing-function: ease-out; */
-    /* animation-delay: 1s; */
-    /* animation-iteration-count: infinite; */
-    /* animation-direction: alternate; */
-    animation: pop 4s ease-out 1s infinite alternate;
-}
+/* Pascal case */
+.NavBar {}
